@@ -8,6 +8,18 @@ process.env.PORT = process.env.PORT || 3000;
 //========
 process.env.NODE_ENV = process.env.NODE_ENV || 'dev';
 
+
+//========
+// caducidad del token 
+//========
+process.env.END_TOKEN = 60 * 60 * 24 * 30;
+
+
+//========
+// SEDD JWT
+//========
+process.env.SEED = process.env.SEED || 'este-es-el-seed-desarrollo';
+
 //=======
 // Base de Datos
 //=======
