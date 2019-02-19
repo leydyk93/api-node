@@ -23,7 +23,8 @@ let usuarioSchema = new Schema({
         required: [true, 'La contraseña es obligatoria']
     }, 
     img: {
-        type: String
+        type: String, 
+        required: false
     }, 
     role: {
         type: String,

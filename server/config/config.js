@@ -14,7 +14,6 @@ process.env.NODE_ENV = process.env.NODE_ENV || 'dev';
 //========
 process.env.END_TOKEN = 60 * 60 * 24 * 30;
 
-
 //========
 // SEDD JWT
 //========
@@ -32,3 +31,10 @@ if(process.env.NODE_ENV === 'dev'){
 }
 
 process.env.URLDB = urlDB;
+
+
+//=======
+// ClienteID de google 
+//=======
+
+ process.env.CLIENT_ID = process.env.CLIENT_ID || '1034100030075-c2fdebo91tnqoh6e94tmus9f328b8c3u.apps.googleusercontent.com';
