@@ -10,4 +10,8 @@ app.use(require('./categories'));
 
 app.use(require('./products'));
 
+app.use(require('./upload'));
+
+app.use(require('./imgs'));
+
 module.exports = app;

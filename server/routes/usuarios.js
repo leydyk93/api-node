@@ -6,7 +6,7 @@ const bcrypt = require('bcrypt');
 const Usuario = require('../models/usuarios');
 const { verificateToken, verificateRol } = require('../middlewares/autentication')
 
-const app = express();
+let app = express();
 
 app.get('/usuario', verificateToken , (req, res) => {
     let from = req.query.from || 0;
@@ -35,8 +35,6 @@ app.get('/usuario', verificateToken , (req, res) => {
                 })
             })
             
-
-
         })
 })
   
